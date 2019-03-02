@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "7465754168",
+    "firebase_url": "https://meetingo-2e1a1.firebaseio.com",
+    "project_id": "meetingo-2e1a1",
+    "storage_bucket": "meetingo-2e1a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7465754168:android:6317e2d209d118a9",
+        "android_client_info": {
+          "package_name": "com.example.meetingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7465754168-27q5f4sbfinio51sb2bb39hr8sgifet9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meetingo",
+            "certificate_hash": "68c710ed8e3535d68e005be7bb2ffd9e12844d83"
+          }
+        },
+        {
+          "client_id": "7465754168-shel42lqk8561ijgtnr4vtda59o3stp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqtw3JnOgoBxATMXTu25J8OTpkSob8BjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7465754168-shel42lqk8561ijgtnr4vtda59o3stp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
