@@ -17,9 +17,9 @@
             android:icon="@drawable/ic_assignment_ind_black_24dp"
             android:title="Webinar" />
         <item
-            android:id="@+id/nav_starred"
-            android:icon="@drawable/ic_star_black_24dp"
-            android:title="Starred Messages" />
+            android:id="@+id/nav_videocall"
+            android:icon="@drawable/btn_video"
+            android:title="Video Call" />
     </group>
 
     <item android:title="Settings">

@@ -1,15 +1,15 @@
 package com.example.meetingo;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class BottomNavigation extends AppCompatActivity
-        implements BottomNavigationView.OnNavigationItemSelectedListener{
+       /* implements BottomNavigationView.OnNavigationItemSelectedListener*/{
 
 
 
@@ -17,15 +17,16 @@ public class BottomNavigation extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation);
-
+/*
+        //BottomNavigation
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener((BottomNavigationView.OnNavigationItemSelectedListener) this);
 
         //loading the default fragment
-        loadFragment(new TextFragment());
+        loadFragment(new ChatFragment());*/
     }
 
-    private boolean loadFragment(Fragment fragment){
+   /* private boolean loadFragment(Fragment fragment){
         if(fragment!=null){
             getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,fragment)
                     .commit();
@@ -34,27 +35,28 @@ public class BottomNavigation extends AppCompatActivity
 
         }
         return false;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
 
+
         switch (item.getItemId()) {
 
-            case R.id.status_text:
-                fragment = new TextFragment();
+            case R.id.bottom_Chat:
+                fragment = new ChatFragment();
                 break;
 
-            case R.id.status_camera:
-                fragment = new CameraFragment();
+            case R.id.bottom_status:
+                fragment = new StatusFragment();
                 break;
 
-            case R.id.status_audio:
-                fragment = new AudioFragment();
+            case R.id.bottom_audiocall:
+                fragment = new CallFragment();
                 break;
         }
 
         return loadFragment(fragment);
-    }
+    }*/
 }

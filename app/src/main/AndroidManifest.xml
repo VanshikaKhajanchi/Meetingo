@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.meetingo">
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- WebRTC Dependencies -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission. WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="your.package.name.permission.C2D_MESSAGE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <permission
+        android:name="your.package.name.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
 
     <application
         android:allowBackup="true"
@@ -13,11 +34,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestWhiteBoard"></activity>
+        <activity android:name=".RegisterUser"></activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".VideoChat" />
+        <activity android:name=".Webinar" /> <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
         <activity android:name=".LoginActivity" />
-        <activity
+        <!--
+    <activity
             android:name=".DummyLoginActivity"
             android:label="@string/title_activity_login" />
+        -->
         <activity
             android:name=".BottomNavigation"
             android:label="@string/title_activity_bottom_navigation" />

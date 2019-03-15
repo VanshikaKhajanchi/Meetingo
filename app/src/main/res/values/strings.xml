@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Meetingo</string>
+    <string name="app_id">
+        891b7e59a43d4c01a6b03526001e3176</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
     <string name="title_activity_navigation_drawer">Navigation_drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -30,4 +36,5 @@
     <string name="welcome">Welcome!</string>
     <string name="logo">Logo</string>
     <string name="whitebox">whitebox</string>
+    <string name="loading">Loading</string>
 </resources>
